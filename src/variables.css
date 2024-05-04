@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Luckiest+Guy&display=swap');
+@font-face {
+  font-family: 'Advetime';
+  src: url('../src/assets/fonts/Advetime.otf') format('opentype');
+}
+
+:root {
+  --primary-color: rgb(253, 253, 65);
+  --secondary-color: rgb(253, 253, 65);
+  --light-orange: rgb(255, 138, 11);
+  --darker-orange: rgb(242, 80, 29);
+  --green: rgb(53, 170, 14);
+
+  --container-width: 1250px;
+  --text-shadow: 1.5px 1.5px 6px rgba(0, 0, 0, 0.5);
+  --box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+  --background-first-color: #fc9203;
+  --background-second-color: #ffba02;
+  --light-green-primary: #4f5e2c;
+  --light-green-secondary: #73cc3a;
+  --dark-green-primary: #1a3807;
+  --dark-orange: #ef780c;
+  --habano: #f4be67;
+
+  --luckiest-guy: 'Luckiest Guy', cursive;
+  --advetime: 'Advetime', sans-serif;
+  --handlee: 'Handlee', cursive;
+}
+/* Titulos fuente = Luckiest Guy Regular */
+/* parrafos texto fuente = Handlee Regular */

@@ -1,0 +1,13 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  width: calc(var(--container-width) - 100px);
+  padding: 30px 0;
+  gap: 100px;
+}
+.footerContainer span {
+  font-family: var(--handlee);
+  color: var(--dark-green-primary);
+  font-size: 28px;
+  font-weight: 500;
+}

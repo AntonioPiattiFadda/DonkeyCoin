@@ -1,0 +1,52 @@
+.heroContainer {
+  width: calc(var(--container-width) - 100px);
+  height: calc(100vh - 80px);
+  min-height: 850px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.heroContainer h1 {
+  color: white;
+  font-size: 120px;
+  font-family: var(--luckiest-guy);
+}
+
+.heroContainer p {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: var(--handlee);
+}
+
+.buttonContainer button {
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 19%);
+  padding: 14px 60px;
+  margin-bottom: 30px;
+  font-family: var(--handlee);
+  background-color: var(--light-green-primary);
+}
+
+.socialContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.socialLogo {
+  width: 60px;
+  height: 60px;
+}
+.mLogo {
+  width: 70px;
+  height: 70px;
+  transform: translate(-5px, -5px);
+}
+.heroImage {
+  width: 400px;
+}
