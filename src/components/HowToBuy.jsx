@@ -3,9 +3,10 @@ import CopyLogo from '../assets/CopyLogo.png';
 import './HowToBuy.css';
 import ScrollAnimationWrapper from './AnimationWrapper';
 import BuyLogo from '../assets/BuyLogo.png';
+import certik from '../assets/certik.png';
 
 const HowToBuy = () => {
-  const endDate = new Date('March 28, 2024 23:59:59');
+  const endDate = new Date('September 28, 2024 23:59:59');
 
   const [userBNB, setUserBNB] = useState(84.5);
   const [totalBNB, setTotalBNB] = useState(150);
@@ -129,6 +130,7 @@ const HowToBuy = () => {
                 </span>
               </div>
             </div>
+            <img className="certikLogo" src={certik} alt="Certik Logo" />
           </div>
         </ScrollAnimationWrapper>
       </div>

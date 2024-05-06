@@ -1,28 +1,20 @@
-.roadmapSection {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../assets/fondo3.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
 .roadmapContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: var(--container-width);
+  padding: 50px 0 120px 0;
 }
 
 .roadmapTitle {
-  font-size: 5.5rem;
-  font-weight: bold;
-  color: var(--light-orange);
-  text-shadow: var(--text-shadow);
   margin: 40px 0;
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  font-family: var(--luckiest-guy);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5),
+    3px 2px 6px var(--light-green-secondary);
 }
 
 .phaseContainer {
@@ -30,29 +22,41 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
-  width: var(--container-width);
-  margin-bottom: 100px;
+  gap: 25px;
+  margin-bottom: 0px;
 }
 
 .phaseCard {
   display: flex;
   flex-direction: column;
   width: 600px;
-  height: 200px;
+  height: 140px;
   justify-content: center;
   align-items: center;
   background-color: white;
   border-radius: 20px;
-  box-shadow: var(--box-shadow);
+  box-shadow: rgba(0, 0, 0, 0.293) 5px 0px 20px;
+  font-family: var(--luckiest-guy);
 }
 
 .titlePhaseCard {
   font-weight: bold;
-  font-size: 3rem;
-  color: var(--light-orange);
+  font-size: 2.6rem;
+  letter-spacing: 3px;
+  color: var(--light-green-primary);
 }
 
 .phaseText {
-  font-size: 1rem;
+  font-size: 1.4rem;
+  font-family: var(--handlee);
+}
+
+.rightColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightColumn img {
+  width: 80%;
+  transform: translateY(17%);
 }

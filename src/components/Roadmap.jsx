@@ -1,70 +1,49 @@
-import "./Roadmap.css";
-import ScrollAnimationWrapper from "./AnimationWrapper";
+import './Roadmap.css';
+import ScrollAnimationWrapper from './AnimationWrapper';
+import RoadmapMonkey from '../assets/RoadmapMonkey.png';
+
 const Roadmap = () => {
   return (
     <section className="roadmapSection">
       <div className="roadmapContainer">
-        <ScrollAnimationWrapper animation="fadeInUp" index={0}>
-          <h3 className="roadmapTitle">Roadmap</h3>
-        </ScrollAnimationWrapper>
-        <div className="phaseContainer">
-          <ScrollAnimationWrapper animation="fadeInUp" index={1}>
-            <div className="phaseCard">
-              <span className="titlePhaseCard">Phase 1</span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-            </div>
+        <div className="LeftColumn">
+          <ScrollAnimationWrapper animation="fadeInUp" index={0}>
+            <h3 className="roadmapTitle">Roadmap</h3>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper animation="fadeInUp" index={2}>
-            <div className="phaseCard">
-              <span className="titlePhaseCard">Phase 2</span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-            </div>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper animation="fadeInUp" index={3}>
-            <div className="phaseCard">
-              <span className="titlePhaseCard">Phase 3</span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-            </div>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper animation="fadeInUp" index={4}>
-            <div className="phaseCard">
-              <span className="titlePhaseCard">Phase 4</span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-              <span className="phaseText">
-                *Lorem ipsum, dolor sit amet consectetur adipisicing elit
-              </span>
-            </div>
-          </ScrollAnimationWrapper>
+          <div className="phaseContainer">
+            <ScrollAnimationWrapper animation="fadeInUp" index={1}>
+              <div className="phaseCard">
+                <span className="titlePhaseCard">Phase 1</span>
+                <span className="phaseText">
+                  Meme Free-Airdrop, Vibe and HODL
+                </span>
+              </div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper animation="fadeInUp" index={2}>
+              <div className="phaseCard">
+                <span className="titlePhaseCard">Phase 2</span>
+                <span className="phaseText">Presale, Meme Takeover</span>
+              </div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper animation="fadeInUp" index={3}>
+              <div className="phaseCard">
+                <span className="titlePhaseCard">Phase 3</span>
+                <span className="phaseText">DEX</span>
+              </div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper animation="fadeInUp" index={4}>
+              <div className="phaseCard">
+                <span className="titlePhaseCard">Phase 4</span>
+                <span className="phaseText">CEX</span>
+              </div>
+            </ScrollAnimationWrapper>
+          </div>
         </div>
+        <ScrollAnimationWrapper animation="fadeInRight" index={1}>
+          <div className="rightColumn">
+            <img src={RoadmapMonkey} alt="Monkey" />
+          </div>
+        </ScrollAnimationWrapper>
       </div>
     </section>
   );

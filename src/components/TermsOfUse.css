@@ -1,0 +1,43 @@
+.termsSection {
+  width: 100vw;
+  background-color: var(--dark-orange);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 100px 0;
+}
+.termsContainer {
+  display: flex;
+  width: var(--container-width);
+  flex-direction: column;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.titleContainer h2 {
+  font-family: var(--luckiest-guy);
+  font-size: 3.8rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.termsInfoContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 20px 0;
+  justify-content: center;
+}
+.termsInfoContainer p {
+  font-family: var(--handlee);
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  line-height: 170%;
+}

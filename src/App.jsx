@@ -5,6 +5,8 @@ import Nav from './components/Nav';
 import HowToBuy from './components/HowToBuy';
 import Tokenomics from './components/Tokenomics';
 import About from './components/About';
+import Roadmap from './components/Roadmap';
+import TermsOfUse from './components/TermsOfUse';
 
 function App() {
   return (
@@ -13,9 +15,9 @@ function App() {
       <Hero />
       <About />
       <HowToBuy />
-      {/* <Ecosystem /> */}
+      <Roadmap />
       <Tokenomics />
-      {/* <Roadmap /> */}
+      <TermsOfUse />
       <Footer />
     </div>
   );
