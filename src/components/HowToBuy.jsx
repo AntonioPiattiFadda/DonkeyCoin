@@ -45,7 +45,7 @@ const HowToBuy = () => {
 
   return (
     <section>
-      <div className="howToContainer">
+      <div className="howToContainer" id='how-to-buy'>
         <ScrollAnimationWrapper animation="fadeInLeft" index={0}>
           <div className="leftContainer">
             <h2>HOW TO BUY!</h2>
@@ -97,8 +97,8 @@ const HowToBuy = () => {
                   ></div>
                 </div>
                 <div className="total">
-                  <p>{userBNB} BNB</p>
-                  <p>{totalBNB} BNB</p>
+                  <p>{userBNB} ETH</p>
+                  <p>{totalBNB} ETH</p>
                 </div>
               </div>
               <div className="youPay">
@@ -119,14 +119,14 @@ const HowToBuy = () => {
                 </div>
               </div>
               <div className="buttonPayContainer">
-                <button className="buttonPayModule">
+                <button className="buttonPayModule hoverButton">
                   <span className="buttonSpan">Approve & Pay</span>
                 </button>
               </div>
               <div className="transactionContainer">
                 <span>
                   See Transaction on{' '}
-                  <span className="blockExplorer">Etherscan</span>
+                  <span className="blockExplorer hoverLink">Etherscan</span>
                 </span>
               </div>
             </div>

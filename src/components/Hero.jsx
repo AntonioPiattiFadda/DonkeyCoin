@@ -8,23 +8,23 @@ import XLogo from '../assets/XLogo.png';
 const Hero = () => {
   return (
     <>
-      <div className="heroContainer">
+      <div className="heroContainer" id='home'>
         <div>
-          <ScrollAnimationWrapper animation="fadeInUp" index={3}>
+          <ScrollAnimationWrapper animation="fadeInLeft" index={3}>
             <h1>DONKY</h1>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper animation="fadeInUp" index={4}>
+          <ScrollAnimationWrapper animation="fadeInLeft" index={4}>
             <p>
               $DONKY is a meme for people who <br /> love the 80s and 90s and
               have <br /> wonderful memories of that time…
             </p>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper animation="fadeInUp" index={5}>
+          <ScrollAnimationWrapper animation="fadeInLeft" index={5}>
             <div className="buttonContainer">
-              <button>PRESALE</button>
+              <button className='hoverButton'>PRESALE</button>
             </div>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper animation="fadeInUp" index={6}>
+          <ScrollAnimationWrapper animation="fadeInLeft" index={6}>
             <div className="socialContainer">
               <a href="">
                 <img className="socialLogo" src={XLogo} alt="X" />
@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
           </ScrollAnimationWrapper>
         </div>
-        <ScrollAnimationWrapper animation="fadeInUp" index={7}>
+        <ScrollAnimationWrapper animation="fadeInRight" index={7}>
           <div>
             <img className="heroImage" src={DonkeyImage} alt="Donkey image" />
           </div>

@@ -30,10 +30,14 @@
   margin: 0 10px;
   color: white;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   font-family: var(--handlee);
   text-shadow: var(--text-shadow);
   cursor: pointer;
+}
+li a {
+  color: white;
+  text-decoration: unset;
 }
 .navContainer button {
   background-color: var(--background-first-color);

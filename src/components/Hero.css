@@ -1,6 +1,6 @@
 .heroContainer {
   width: calc(var(--container-width) - 100px);
-  height: calc(100vh - 80px);
+  height: calc(100vh);
   min-height: 850px;
   display: flex;
   flex-direction: row;
@@ -48,5 +48,5 @@
   transform: translate(-5px, -5px);
 }
 .heroImage {
-  width: 400px;
+  width: 450px;
 }

@@ -4,7 +4,7 @@ import RoadmapMonkey from '../assets/RoadmapMonkey.png';
 
 const Roadmap = () => {
   return (
-    <section className="roadmapSection">
+    <section className="roadmapSection" id='roadmap'>
       <div className="roadmapContainer">
         <div className="LeftColumn">
           <ScrollAnimationWrapper animation="fadeInUp" index={0}>
@@ -28,7 +28,7 @@ const Roadmap = () => {
             <ScrollAnimationWrapper animation="fadeInUp" index={3}>
               <div className="phaseCard">
                 <span className="titlePhaseCard">Phase 3</span>
-                <span className="phaseText">DEX</span>
+                <span className="phaseText">DEX, UNISWAP/LP</span>
               </div>
             </ScrollAnimationWrapper>
             <ScrollAnimationWrapper animation="fadeInUp" index={4}>

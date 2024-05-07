@@ -13,8 +13,7 @@
   font-size: 80px;
   text-align: center;
   font-family: var(--luckiest-guy);
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5),
-    3px 2px 6px var(--light-green-secondary);
+
 }
 
 .phaseContainer {

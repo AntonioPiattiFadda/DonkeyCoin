@@ -1,6 +1,6 @@
-import './About.css';
-import DonkeyAboutImage from '../assets/DonkeyAboutImage.png';
-import ScrollAnimationWrapper from './AnimationWrapper';
+import "./About.css";
+import DonkeyAboutImage from "../assets/DonkeyAboutImage.png";
+import ScrollAnimationWrapper from "./AnimationWrapper";
 
 const About = () => {
   return (
@@ -16,18 +16,17 @@ const About = () => {
           </div>
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper animation="fadeInRight" index={0}>
-          <div>
+          <div id="about">
             <h2>ABOUT</h2>
 
             <p>
-              {' '}
               Donky is there to protect the other <br /> memes especially $PEPE
-              and $BOME in <br /> their race to be the first memecoin to <br />{' '}
-              reach $1limit.{' '}
+              and $BOME in <br /> their race to be the first memecoin to <br />
+              reach $1 limit.
             </p>
             <p>
               Donky will do anything to protect the <br /> princes ($Pepe,$Bome)
-              from all the dogs <br /> and cats and other memes. But who <br />{' '}
+              from all the dogs <br /> and cats and other memes. But who <br />
               knows, maybe he will be the lucky one in <br /> the end to be the
               first memecoin to cross <br /> the $1 limit, lol.
             </p>

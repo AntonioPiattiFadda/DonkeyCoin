@@ -24,3 +24,13 @@
 button {
   cursor: pointer;
 }
+.hoverButton:hover {
+  scale: 1.1;
+  transition: all 0.2s ease-in-out;
+}
+.hoverButton {
+  transition: all 0.2s ease-in-out;
+}
+.hoverLink:hover {
+  cursor: pointer;
+}

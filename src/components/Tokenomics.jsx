@@ -2,7 +2,7 @@ import './Tokenomics.css';
 import ScrollAnimationWrapper from './AnimationWrapper';
 const Tokenomics = () => {
   return (
-    <section className="tokenomicsSection">
+    <section className="tokenomicsSection" id='tokenomics'>
       <div className="tokenomicsContainer">
         <ScrollAnimationWrapper animation="fadeInUp" index={1}>
           <div className="tokenomicsTitleContainer">
@@ -34,26 +34,26 @@ const Tokenomics = () => {
             <ScrollAnimationWrapper animation="fadeInUp" index={5}>
               <div className="infoCard">
                 <span className="tokenCardTitle">Airdrop</span>
-                <span className="tokenCardSubTitle">10%</span>
+                <span className="tokenCardSubTitle">20%</span>
               </div>
             </ScrollAnimationWrapper>
             <ScrollAnimationWrapper animation="fadeInUp" index={6}>
               <div className="infoCard">
                 <span className="tokenCardTitle">Presale</span>
-                <span className="tokenCardSubTitle">40%</span>
+                <span className="tokenCardSubTitle">50%</span>
               </div>
             </ScrollAnimationWrapper>
             <ScrollAnimationWrapper animation="fadeInUp" index={7}>
               <div className="infoCard">
                 <span className="tokenCardTitle">Liquidity</span>
-                <span className="tokenCardSubTitle">50%</span>
+                <span className="tokenCardSubTitle">30%</span>
               </div>
             </ScrollAnimationWrapper>
           </div>
         </div>
         <ScrollAnimationWrapper animation="fadeInUp" index={8}>
           <div className="buttonContainer">
-            <button>Whitepaper</button>
+            <button className='hoverButton'>Whitepaper</button>
           </div>
         </ScrollAnimationWrapper>
       </div>

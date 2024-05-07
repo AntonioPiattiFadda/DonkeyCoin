@@ -12,31 +12,49 @@ const ScrollAnimationWrapper = ({
   useEffect(() => {
     const element = ref.current;
     const delay = baseDelay * index; // Calcula el delay basado en el índice del elemento
-
+    gsap.set(element, { autoAlpha: 0 });
     const onEnter = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          let animationParams = { autoAlpha: 0, delay: delay }; // Parámetros comunes de animación ajustados para mantener el elemento visible
+          let animationParams = { delay: delay }; // Parámetros comunes de animación ajustados para mantener el elemento visible
 
           switch (animation) {
             case "fadeInUp":
-              gsap.from(element, { ...animationParams, y: 50, duration: 1 });
+              gsap.fromTo(
+                element,
+                { y: 50 },
+                { ...animationParams, autoAlpha: 1, y: 0, duration: 1 }
+              );
               break;
             case "fadeInUpNav":
-              gsap.from(element, { ...animationParams, y: 10, duration: 0.5 });
+              gsap.fromTo(
+                element,
+                { y: 10 },
+                { ...animationParams, autoAlpha: 1, y: 0, duration: 0.5 }
+              );
               break;
             case "fadeInDown":
-              gsap.from(element, { ...animationParams, y: -50, duration: 1 });
+              gsap.fromTo(
+                element,
+                { y: -50 },
+                { ...animationParams, autoAlpha: 1, y: 0, duration: 1 }
+              );
               break;
             case "fadeInLeft":
-              gsap.from(element, {
-                ...animationParams,
-                x: -150,
-                duration: 1,
-              });
+              gsap.fromTo(
+                element,
+                {
+                  x: -150,
+                },
+                { ...animationParams, autoAlpha: 1, x: 0, duration: 1 }
+              );
               break;
             case "fadeInRight":
-              gsap.from(element, { ...animationParams, x: 150, duration: 1 });
+              gsap.fromTo(
+                element,
+                { x: 150 },
+                { ...animationParams, autoAlpha: 1, x: 0, duration: 1 }
+              );
               break;
             case "bounce":
               gsap.fromTo(
@@ -54,7 +72,7 @@ const ScrollAnimationWrapper = ({
       });
     };
 
-    const observer = new IntersectionObserver(onEnter, { threshold: 0.1 });
+    const observer = new IntersectionObserver(onEnter, { threshold: 0.05 });
     observer.observe(element);
 
     return () => observer.disconnect(); // Asegúrate de desconectar el observer cuando el componente se desmonte

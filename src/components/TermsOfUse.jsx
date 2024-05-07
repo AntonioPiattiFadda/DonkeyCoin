@@ -1,6 +1,6 @@
-import './TermsOfUse.css';
-import DonkeyTerms from '../assets/DonkeyTerms.png';
-import ScrollAnimationWrapper from './AnimationWrapper';
+import "./TermsOfUse.css";
+import DonkeyTerms from "../assets/DonkeyTerms.png";
+import ScrollAnimationWrapper from "./AnimationWrapper";
 const TermsOfUse = () => {
   return (
     <section className="termsSection">
@@ -14,16 +14,14 @@ const TermsOfUse = () => {
         <ScrollAnimationWrapper animation="fadeInUp" index={2}>
           <div className="termsInfoContainer">
             <p>
-              $DONKY coin has no association with Shigeru <br /> Miyamoto/
-              Nintendo or theirs creation Donkey Kong. <br />
-              This token is simply an homage to a meme in memories of
-              <br /> the 80s and 90s.
+              $DONKY coin has no association with Shigeru Miyamoto/ Nintendo or
+              theirs creation Donkey Kong. This token is simply an homage to a
+              meme in memories of the 80s and 90s.
             </p>
             <p>
-              $DONKY is a meme coin with no intrinsic value or
-              <br /> expectation of financial return. There is no formal team
-              <br /> or roadmap. the coin is completely useless and for
-              <br /> entertainment purposes only.
+              $DONKY is a meme coin with no intrinsic value or expectation of
+              financial return. There is no formal team or roadmap. the coin is
+              completely useless and for entertainment purposes only.
             </p>
           </div>
         </ScrollAnimationWrapper>
