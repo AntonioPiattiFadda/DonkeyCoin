@@ -11,3 +11,14 @@
   font-size: 28px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footerContainer span {
+    font-size: 16px;
+  }
+}

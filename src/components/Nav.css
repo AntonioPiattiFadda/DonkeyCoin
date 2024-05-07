@@ -50,3 +50,19 @@ li a {
   font-size: 1.5rem;
   box-shadow: 2px 2px 5px rgb(0 0 0 / 19%);
 }
+@media screen and (max-width: 768px) {
+  .navContainer {
+    width: var(--container-width-mobile);
+    padding: 10px 0;
+  }
+  .navContainer div:first-child img {
+    width: 70px;
+  }
+  .navContainer ul {
+    display: none;
+  }
+  .navContainer button {
+    padding: 4px 10px;
+    font-size: 1.4rem;
+  }
+}

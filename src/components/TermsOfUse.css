@@ -41,3 +41,23 @@
   text-align: center;
   line-height: 170%;
 }
+@media screen and (max-width: 768px) {
+  .termsContainer {
+    width: var(--container-width-mobile);
+  }
+  .titleContainer img {
+    width: 70px;
+  }
+  .titleContainer h2 {
+    font-size: 2.5rem;
+  }
+  .termsInfoContainer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .termsInfoContainer p {
+    font-size: 18px;
+    width: 90%;
+  }
+}

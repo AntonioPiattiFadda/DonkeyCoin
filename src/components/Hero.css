@@ -50,3 +50,49 @@
 .heroImage {
   width: 450px;
 }
+
+@media screen and (max-width: 768px) {
+  .heroContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 50px;
+  }
+
+  .heroContainer h1 {
+    font-size: 70px;
+    text-align: center;
+  }
+  .heroContainer p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .buttonContainer button {
+    padding: 14px 40px;
+    font-size: 8px;
+  }
+  .socialContainer {
+    justify-content: center;
+  }
+  .socialLogo {
+    width: 40px;
+    height: 40px;
+  }
+  .mLogo {
+    width: 50px;
+    height: 50px;
+  }
+  .heroImageContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .heroImage {
+    width: 40%;
+  }
+}

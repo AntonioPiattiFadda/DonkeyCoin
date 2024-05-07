@@ -13,7 +13,6 @@
   font-size: 80px;
   text-align: center;
   font-family: var(--luckiest-guy);
-
 }
 
 .phaseContainer {
@@ -58,4 +57,28 @@
 .rightColumn img {
   width: 80%;
   transform: translateY(17%);
+}
+@media screen and (max-width: 768px) {
+  .roadmapContainer {
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+  }
+  .roadmapTitle {
+    font-size: 50px;
+  }
+  .phaseCard {
+    width: 90%;
+  }
+  .titlePhaseCard {
+    font-size: 1.8rem;
+  }
+  .phaseText {
+    font-size: 18px;
+    text-align: center;
+  }
+  .rightColumn img {
+    width: 300px;
+    margin-top: 50px;
+    transform: translateY(0%);
+  }
 }

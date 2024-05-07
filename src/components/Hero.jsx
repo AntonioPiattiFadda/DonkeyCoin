@@ -8,7 +8,7 @@ import XLogo from '../assets/XLogo.png';
 const Hero = () => {
   return (
     <>
-      <div className="heroContainer" id='home'>
+      <div className="heroContainer" id="home">
         <div>
           <ScrollAnimationWrapper animation="fadeInLeft" index={3}>
             <h1>DONKY</h1>
@@ -21,7 +21,7 @@ const Hero = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper animation="fadeInLeft" index={5}>
             <div className="buttonContainer">
-              <button className='hoverButton'>PRESALE</button>
+              <button className="hoverButton">PRESALE</button>
             </div>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper animation="fadeInLeft" index={6}>
@@ -39,7 +39,7 @@ const Hero = () => {
           </ScrollAnimationWrapper>
         </div>
         <ScrollAnimationWrapper animation="fadeInRight" index={7}>
-          <div>
+          <div className="heroImageContainer">
             <img className="heroImage" src={DonkeyImage} alt="Donkey image" />
           </div>
         </ScrollAnimationWrapper>

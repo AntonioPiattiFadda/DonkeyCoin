@@ -29,7 +29,6 @@
   font-size: 80px;
   text-align: center;
   font-family: var(--luckiest-guy);
-
 }
 
 .tokenInfo {
@@ -91,3 +90,32 @@
   background-color: var(--light-green-primary);
 }
 
+@media screen and (max-width: 768px) {
+  .tokenomicsContainer {
+    width: var(--container-width-mobile);
+  }
+  .tokenomicsTitle {
+    font-size: 50px;
+  }
+  .cardsContainer {
+    flex-direction: column;
+    width: 20%;
+  }
+
+  .infoCard {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tokenCardTitle {
+    font-size: 1.8rem;
+  }
+
+  .tokenCardSubTitle {
+    font-size: 18px;
+  }
+
+  .buttonContainer button {
+    font-size: 1.2rem;
+  }
+}
